@@ -21,6 +21,7 @@ public class BaseTest {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//lib//chromedriver_89.exe");
 		driver = new ChromeDriver();
 		driver.get("Http://flipkart.com");
+		driver.manage().window().maximize();
 	}
 	
 	@AfterClass
