@@ -15,6 +15,7 @@ public class SmokeTests extends BaseTest{
 	@Test
 	public void verifyHomePage() {
 		System.out.println("Current URL " +getDriver().getCurrentUrl());
+      //  Updated upstream;
 		//getDriver().findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
 		homePage.clickOnClose();
 		mobilesPage = homePage.clickOnMobiles();
@@ -25,6 +26,9 @@ public class SmokeTests extends BaseTest{
 	@BeforeClass
 	public void setUp() {
 		homePage= new HomePage(getDriver());
+		getDriver().findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
+		
+	
 	}
 
 }
