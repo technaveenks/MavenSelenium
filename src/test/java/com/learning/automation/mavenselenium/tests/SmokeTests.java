@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.learning.automation.mavenselenium.pages.HomePage;
 import com.learning.automation.mavenselenium.pages.MobilesPage;
 import com.learning.automation.mavenselenium.utility.BaseTest;
-import com.learning.automation.mavenselenium.utility.ExcelReader;
+//import com.learning.automation.mavenselenium.utility.ExcelReader;
 
 public class SmokeTests extends BaseTest{
 	HomePage homePage;
@@ -32,11 +32,11 @@ public class SmokeTests extends BaseTest{
 		
 	}
 	
-	@Test
+	/*@Test
 	public void verifyData() throws Exception {
 		ExcelReader.setExcelFile();
 	System.out.println(ExcelReader.getCellData(1, 0));
-	}
+	}*/
 	
 	
 	@BeforeClass
