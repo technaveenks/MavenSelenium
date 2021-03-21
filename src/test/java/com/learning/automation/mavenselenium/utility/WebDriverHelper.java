@@ -14,7 +14,7 @@ public class WebDriverHelper extends BaseTest {
 	public static void captureScreenshot(String methodName) {
 		File scrFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(scrFile, new File("./screenshot/" + methodName + ".png"));
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\prasa\\OneDrive\\Documents\\GitHub\\MavenSelenium\\screenshot\\" + methodName + ".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -24,7 +24,7 @@ public class ExcelReader {
 
 			// Step 1 - Accessing file
 
-			FileInputStream ExcelFile = new FileInputStream("C:\\Users\\navee\\OneDrive\\Documents\\GitHub\\MavenSelenium\\Data\\TestData.xlsx");
+			FileInputStream ExcelFile = new FileInputStream("C:\\Users\\prasa\\OneDrive\\Documents\\GitHub\\MavenSelenium\\Data\\TestData.xlsx");
 
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 

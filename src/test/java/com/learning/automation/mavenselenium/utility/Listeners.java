@@ -37,7 +37,13 @@ public class Listeners implements ITestListener {
 		// test screen shot code here
 		WebDriverHelper.captureScreenshot(result.getMethod().getMethodName());
 		test.log(Status.FAIL, "Test Failed");
-		test.addScreenCaptureFromPath("C:\\Users\\navee\\OneDrive\\Documents\\GitHub\\MavenSelenium\\screenshot\\"
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.addScreenCaptureFromPath("C:\\Users\\prasa\\OneDrive\\Documents\\GitHub\\MavenSelenium\\screenshot\\"
 				+ result.getMethod().getMethodName() + ".png");
 	}
 
