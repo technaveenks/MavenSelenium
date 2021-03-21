@@ -67,7 +67,6 @@ public class Listeners implements ITestListener {
 		System.out.println(" On start of Test ");
 		reports = new ExtentReports();
 		//klov = new ExtentKlovReporter("mavenselenium").initWithDefaultSettings();
-
 		spark = new ExtentSparkReporter(
 				"target/" + new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss-ms").format(new Date()) + "-reports.html");
 
